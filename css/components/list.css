@@ -1,0 +1,97 @@
+/* We just give you the arrow CSS code */
+.product {
+  display:flex;
+  align-items: center;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px 0;
+  transition: all 0.3s ease;
+}
+
+.product:hover {
+  background-color: #F7F7FA;
+  cursor: pointer;
+}
+
+.product:hover .product-image {
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
+}
+
+.product:hover .product-upvote {
+  transform: scale(1.2);
+}
+
+.product-upvote {
+  flex: 0 0 50px;
+  transition: all 0.15s ease;
+}
+
+.product-upvote:hover {
+  color: #5898f1;
+}
+
+.product-count {
+
+}
+
+.product-arrow {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid transparent;
+  border-bottom: 9px solid black;
+  border-radius: 2px;
+  margin: auto;
+  transition: all 0.15s ease;
+}
+
+.product-upvote:hover .product-arrow {
+  border-bottom: 9px solid #5898f1;
+}
+
+.product-image {
+  flex: 0 0 50;
+  border-radius: 10px;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+  transition: all 0.15s ease;
+}
+
+.product-body {
+  flex: 1 0 auto;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.product-controls {
+  flex: 0 0 100;
+  color: #E6E6E6;
+}
+
+.list-inline li {
+  list-style: none;
+  display: inline;
+  padding: 0 20px;
+}
+
+.list-inline i {
+  color: #E6E6E6;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.list-inline a:hover i {
+  color: #D3473C;
+  transform: scale(1.3);
+}
